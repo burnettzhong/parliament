@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Api Parliament documentation center">
+
+    <title>Parliament Server</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Parliament</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://github.com/burnettzhong">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <h1>
+            API base path list:
+        </h1>
+    </div>
+    <div class="row">
+        <div id="app-4">
+            <ul class="list-group">
+                <li v-for="api in apis" class="list-group-item">
+                    <a v-bind:href="'swagger/index.html?url=/api' + api.basePath" >
+                        Title:
+                        {{ api.basePath }}
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; <a href="https://github.com/burnettzhong">burnnetzhong</a> 2017</p>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+<!-- Vue2 -->
+<script src="js/vue.js"></script>
+
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
