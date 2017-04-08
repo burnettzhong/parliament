@@ -41,6 +41,7 @@ CAUTION: for _khs-spring-boot-publish-swagger-starter_, please do not use origin
     cd khs-spring-boot-publish-swagger-starter
     mvn clean install
     
+    
 2. Add maven dependencies
 
         <dependency>
