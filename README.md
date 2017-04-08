@@ -68,10 +68,12 @@ Simply add **@EnableSwagger2** and **@PublishSwagger** annotations.
 For more information about Swagger2 usage, please visit [Springfox Reference Documentation](http://springfox.github.io/springfox/docs/current/).
 
 4. Add the following properties your application.yml file:
-   swagger:
-     publish:
-       publish-url: http://{_Parliament server address_}/swagger/publish/
-       swagger-url: http://127.0.0.1:${server.port}/v2/api-docs
+
+
+       swagger:
+            publish:
+                publish-url: http://{_Parliament server address_}/swagger/publish/
+                swagger-url: http://127.0.0.1:${server.port}/v2/api-docs
 
 
 That's all! Now you can start your Spring Boot application, the API information will be published to Parliament Server automatically.
