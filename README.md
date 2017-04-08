@@ -37,9 +37,9 @@ CAUTION: for _khs-spring-boot-publish-swagger-starter_, please do not use origin
 1. Build and add khs-spring-boot-publish-swagger-starter dependency, run following command:
 
 
-    git clone https://github.com/burnettzhong/khs-spring-boot-publish-swagger-starter
-    cd khs-spring-boot-publish-swagger-starter
-    mvn clean install
+        git clone https://github.com/burnettzhong/khs-spring-boot-publish-swagger-starter
+        cd khs-spring-boot-publish-swagger-starter
+        mvn clean install
     
     
 2. Add maven dependencies
@@ -59,11 +59,11 @@ CAUTION: for _khs-spring-boot-publish-swagger-starter_, please do not use origin
 Simply add **@EnableSwagger2** and **@PublishSwagger** annotations.
 
 
-    @EnableSwagger2
-    @PublishSwagger
-    public class ServiceApplication {
-        ...
-    }
+        @EnableSwagger2
+        @PublishSwagger
+        public class ServiceApplication {
+            ...
+        }
 
 For more information about Swagger2 usage, please visit [Springfox Reference Documentation](http://springfox.github.io/springfox/docs/current/).
 
